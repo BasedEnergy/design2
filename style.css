@@ -1,0 +1,50 @@
+body{
+    background-color: #666666;
+    color: #ffffff;
+}
+
+h1{
+    font-family: 'Sonsie One', cursive;
+    padding: 20px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+main{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+}
+
+img{
+    height: 100px;
+    width: 200px;
+    grid-row: span 1;
+    grid-column: span 2;
+    border-radius: 10px;
+}
+
+div{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+@media only screen and (min-width: 600px) {
+
+main{
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+}
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+main{
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(11, 1fr);
+}
+
+}
